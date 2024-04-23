@@ -10,11 +10,24 @@
 .cuerpo_mision .contenedor_principal{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    background-image: url(../img/Fondos/fondo_estrellado.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.cuerpo_mision .contenedor_principal .contenedor_img_astronauta {
+    max-width: 600px;
+    height: 300px;
+}
+.cuerpo_mision .contenedor_principal .contenedor_img_astronauta img{
+    max-width: 600px;
+    height: 300px;
+    
 }
 .cuerpo_mision .contenedor_principal .contenedor_secundario{
-    background-color: #04032B;
-    margin: 50px 100px;
+    background-color: #04032bb3;
     width: 400px;
     height: 320px;
     color: white;
@@ -22,7 +35,7 @@
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-
+    margin: 50px 0px;
 }
 .cuerpo_mision .contenedor_secundario .titulo{
     font-size: 2em;
@@ -42,9 +55,7 @@
     justify-content: center;
 }
 
-.cuerpo_mision .contenedor_secundario .contenido p{
-    
-}
+
 
 /*diseño para el cuerpo de proyectos despega bolivia*/
 
@@ -54,7 +65,7 @@
     
 }
 .cuerpo_proyectos .titulo{
-    font-size: 3em;
+    font-size: 2em;
     background-color: #04032B;
     color: white;
 }
@@ -75,7 +86,7 @@
 .cuerpo_proyectos .lista_proyectos .titulo_proyecto{
     color: white;
     padding: 0px 10px 10px 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 .cuerpo_proyectos .lista_proyectos .proyecto img{
     border-radius: 50%;
