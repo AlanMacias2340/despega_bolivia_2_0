@@ -79,30 +79,40 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    padding: 50px 10px;
 }
 .cuerpo_proyectos .lista_proyectos .proyecto{
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    max-width: 300px;
-    max-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
 }
 
 .cuerpo_proyectos .lista_proyectos .titulo_proyecto{
     color: white;
-    padding: 0px 10px 10px 10px;
-    font-size: 13px;
+    font-size: 16px;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, .6); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    top: -100%;
+}
+.cuerpo_proyectos .lista_proyectos .proyecto:hover .titulo_proyecto{
+    top:0;
 }
 .cuerpo_proyectos .lista_proyectos .proyecto img{
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    padding: 25px;
+    position: absolute;
+    transition: all 0.8s;
+}
+.cuerpo_proyectos .lista_proyectos .proyecto:hover img{
+    transform: scale(1.09);
 }
 
 /*DISEÑO DEL CUERPO DE PROGRAMAS DE DESPEGA BOLIVIA*/
