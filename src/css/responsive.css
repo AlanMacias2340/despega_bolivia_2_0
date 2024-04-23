@@ -1,0 +1,58 @@
+/* -> Media-queries para celulares pequeños*/
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+   .responsive--title {
+     font-size: 20px; /* Reducir el tamaño del título para pantallas en este rango */
+   }
+   .responsive--p{
+      font-size: 13px;
+      
+   }
+   .responsive--astro{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 130px;
+      margin-top: 1px;
+      padding-top: 20px;
+      text-align: center;
+  line-height: 100px; /* Centrar verticalmente el texto */
+  transform: translate(-50%, -50%);
+   }
+   .responsive--button{
+      margin-top: 180px;
+      padding: 10px 30px;
+   }
+}
+
+/* -> Media-queries para celulares estandar*/
+@media only screen and (min-width: 400px) and (max-width: 640px) {
+   .responsive--title {
+     font-size: 20px; /* Reducir el tamaño del título para pantallas en este rango */
+   }
+   .responsive--p{
+      font-size: 17px;
+      
+   }
+   .responsive--astro{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 150px;
+      margin-top: 1px;
+      padding-top: 10px;
+      text-align: center;
+  line-height: 100px; /* Centrar verticalmente el texto */
+  transform: translate(-50%, -50%);
+   }
+   .responsive--button{
+      margin-top: 240px;
+      padding: 10px 30px;
+   }
+}
+
