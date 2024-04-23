@@ -62,21 +62,31 @@
 .cuerpo_proyectos{
     display: flex;
     flex-direction: column;
-    
+    position: relative;
 }
 .cuerpo_proyectos .titulo{
     font-size: 2em;
     background-color: #04032B;
     color: white;
 }
+
 .cuerpo_proyectos .lista_proyectos{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #04032bd9;
+    top: 50px;
+    background-image: url(../img/Fondos/fondo_estrellado.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .cuerpo_proyectos .lista_proyectos .proyecto{
     background-color: transparent;
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +96,7 @@
 .cuerpo_proyectos .lista_proyectos .titulo_proyecto{
     color: white;
     padding: 0px 10px 10px 10px;
-    font-size: 16px;
+    font-size: 13px;
 }
 .cuerpo_proyectos .lista_proyectos .proyecto img{
     border-radius: 50%;
