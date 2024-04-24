@@ -140,6 +140,8 @@
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .cuerpo_programas .principal_contenedor .contenedor{
     display: flex;
@@ -166,4 +168,10 @@
 .cuerpo_programas .principal_contenedor .contenedor .contenido .desc_contenido{
     font-size: 18px;
     text-align: justify;
+}
+.cuerpo_programas .contenedor_img{
+}
+.cuerpo_programas .contenedor_img img{
+    max-width: 300px;
+
 }
