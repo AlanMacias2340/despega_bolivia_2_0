@@ -1,5 +1,5 @@
 .espacio{
-    background-image: url(../img/Fondos/fondo_estrellado.jpeg);
+    background-image: url(../img/Fondos/fondo_estrellado.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -169,8 +169,7 @@
     font-size: 18px;
     text-align: justify;
 }
-.cuerpo_programas .contenedor_img{
-}
+
 .cuerpo_programas .contenedor_img img{
     max-width: 300px;
 
