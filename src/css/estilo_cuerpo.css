@@ -1,20 +1,23 @@
+.espacio{
+    background-image: url(../img/Fondos/fondo_estrellado.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .cuerpo_mision{
     display: felx;
     flex-direction: row;
+    position: relative;
 }
 .cuerpo_mision .titulo_nuestro_enfoque{
-    background-color: #04032B;
     color: white;
     font-size: 2em;
+    position: absolute;
 }
 .cuerpo_mision .contenedor_principal{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url(../img/Fondos/fondo_estrellado.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding: 20px;
 }
 .cuerpo_mision .contenedor_principal .contenedor_img_astronauta {
@@ -66,8 +69,8 @@
 }
 .cuerpo_proyectos .titulo{
     font-size: 2em;
-    background-color: #04032B;
     color: white;
+    position: absolute;
 }
 
 .cuerpo_proyectos .lista_proyectos{
@@ -75,10 +78,6 @@
     align-items: center;
     justify-content: space-around;
     top: 50px;
-    background-image: url(../img/Fondos/fondo_estrellado.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 50px 10px;
 }
 .cuerpo_proyectos .lista_proyectos .proyecto{
@@ -120,15 +119,18 @@
 .cuerpo_programas{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .cuerpo_programas .titulo{
-    font-size: 3em;
-    background-color: #04032B;
+    font-size: 2em;
     color: white;
+    position: absolute;
 }
 .cuerpo_programas .principal_contenedor{
     padding: 25px 100px;
-    background-color: #04032bd9;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .cuerpo_programas .principal_contenedor .contenedor{
     display: flex;
