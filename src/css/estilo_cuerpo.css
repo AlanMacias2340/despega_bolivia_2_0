@@ -1,20 +1,45 @@
+.espacio{
+    background-image: url(../img/Fondos/fondo_estrellado.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.espacio .fondo_negro{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 .cuerpo_mision{
     display: felx;
     flex-direction: row;
+    position: relative;
 }
 .cuerpo_mision .titulo_nuestro_enfoque{
-    background-color: #04032B;
     color: white;
     font-size: 2em;
+    position: absolute;
+    border-bottom: 2px white solid;
+    width: 100%;
 }
 .cuerpo_mision .contenedor_principal{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 50px 40px 0px 40px;
+}
+.cuerpo_mision .contenedor_principal .contenedor_img_astronauta {
+    max-width: 600px;
+    height: 300px;
+}
+.cuerpo_mision .contenedor_principal .contenedor_img_astronauta img{
+    max-width: 600px;
+    height: 300px;
+    
 }
 .cuerpo_mision .contenedor_principal .contenedor_secundario{
-    background-color: #04032B;
-    margin: 50px 100px;
+    background-color: #04032bb3;
     width: 400px;
     height: 320px;
     color: white;
@@ -22,7 +47,7 @@
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-
+    margin: 50px 0px;
 }
 .cuerpo_mision .contenedor_secundario .titulo{
     font-size: 2em;
@@ -40,48 +65,65 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: justify;
 }
 
-.cuerpo_mision .contenedor_secundario .contenido p{
-    
-}
+
 
 /*diseño para el cuerpo de proyectos despega bolivia*/
 
 .cuerpo_proyectos{
     display: flex;
     flex-direction: column;
-    
+    position: relative;
 }
 .cuerpo_proyectos .titulo{
-    font-size: 3em;
-    background-color: #04032B;
+    font-size: 2em;
     color: white;
+    position: absolute;
+    border-bottom: 2px white solid;
+    width: 100%;
 }
+
 .cuerpo_proyectos .lista_proyectos{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #04032bd9;
+    top: 50px;
+    padding: 100px 40px 40px 40px;
 }
 .cuerpo_proyectos .lista_proyectos .proyecto{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
 }
 
 .cuerpo_proyectos .lista_proyectos .titulo_proyecto{
     color: white;
-    padding: 0px 10px 10px 10px;
-    font-size: 20px;
+    font-size: 16px;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(0, 0, 0, .6); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    top: -100%;
+}
+.cuerpo_proyectos .lista_proyectos .proyecto:hover .titulo_proyecto{
+    top:0;
 }
 .cuerpo_proyectos .lista_proyectos .proyecto img{
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    padding: 25px;
+    position: absolute;
+    transition: all 0.8s;
+}
+.cuerpo_proyectos .lista_proyectos .proyecto:hover img{
+    transform: scale(1.09);
 }
 
 /*DISEÑO DEL CUERPO DE PROGRAMAS DE DESPEGA BOLIVIA*/
@@ -89,15 +131,24 @@
 .cuerpo_programas{
     display: flex;
     flex-direction: column;
+    position: relative;
+    
 }
 .cuerpo_programas .titulo{
-    font-size: 3em;
-    background-color: #04032B;
+    font-size: 2em;
     color: white;
+    position: absolute;
+    border-bottom: 2px white solid;
+    width: 100%;
 }
 .cuerpo_programas .principal_contenedor{
     padding: 25px 100px;
-    background-color: #04032bd9;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .cuerpo_programas .principal_contenedor .contenedor{
     display: flex;
@@ -123,4 +174,10 @@
 }
 .cuerpo_programas .principal_contenedor .contenedor .contenido .desc_contenido{
     font-size: 18px;
+    text-align: justify;
+}
+
+.cuerpo_programas .contenedor_img img{
+    max-width: 300px;
+
 }
