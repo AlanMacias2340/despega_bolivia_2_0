@@ -1,13 +1,12 @@
 /* -> Media-queries para celulares pequeños*/
 @media only screen and (min-width: 320px) and (max-width: 400px) {
    .responsive--title {
-     font-size: 20px; /* Reducir el tamaño del título para pantallas en este rango */
+      font-size: 20px; /* Reducir el tamaño del título para pantallas en este rango */
    }
-   .responsive--p{
+   .responsive--p {
       font-size: 13px;
-      
    }
-   .responsive--astro{
+   .responsive--astro {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -18,25 +17,62 @@
       margin-top: 1px;
       padding-top: 20px;
       text-align: center;
-  line-height: 100px; /* Centrar verticalmente el texto */
-  transform: translate(-50%, -50%);
+      line-height: 100px; /* Centrar verticalmente el texto */
+      transform: translate(-50%, -50%);
    }
-   .responsive--button{
+   .responsive--button {
       margin-top: 180px;
       padding: 10px 30px;
    }
-}
+
+   .no--flex {
+      display: block;
+   }
+   .mar--corto {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
+   .flex--adaptativo{
+      display: flex;
+      flex-direction: column;
+   }
+   .ecard--adaptativo{
+      width: 90%;
+      height: 500px;
+      margin: 0px 15px;
+   }
+   .p--card{
+      padding: 10px;
+   }
+   .wave {
+      position: absolute;
+      width: 540px;
+      height: 700px;
+      opacity: 0.6;
+      left: 0;
+      top: 0;
+      margin-left: 0;
+      margin-top: -460px;
+      background: linear-gradient(744deg, #04032B,#04032B 60%,#04032B);
+    }
+    .wave:nth-child(2),
+  .wave:nth-child(3) {
+    top: 0px;
+  }
+  .astro--responsive{
+   padding-top: 30px;
+  }
 
 /* -> Media-queries para celulares estandar*/
 @media only screen and (min-width: 400px) and (max-width: 640px) {
    .responsive--title {
-     font-size: 20px; /* Reducir el tamaño del título para pantallas en este rango */
+      font-size: 20px; /* Reducir el tamaño del título para pantallas en este rango */
    }
-   .responsive--p{
-      font-size: 17px;
-      
+   .responsive--p {
+      font-size: 15px;
    }
-   .responsive--astro{
+   .responsive--astro {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -47,12 +83,24 @@
       margin-top: 1px;
       padding-top: 10px;
       text-align: center;
-  line-height: 100px; /* Centrar verticalmente el texto */
-  transform: translate(-50%, -50%);
+      line-height: 100px; /* Centrar verticalmente el texto */
+      transform: translate(-50%, -50%);
    }
-   .responsive--button{
+   .responsive--button {
       margin-top: 240px;
       padding: 10px 30px;
    }
-}
 
+   .no--flex {
+      display: block;
+   }
+   .mar--corto {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+   .padd--corto {
+      padding-left: 50px;
+      padding-right: 50px;
+   }
+}
+}

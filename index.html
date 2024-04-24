@@ -4,7 +4,7 @@
 <![endif]-->
 <!--[if gt IE 9]><!-->
 <html lang="es">
-  <!--<![endif]-->
+<!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
@@ -40,8 +40,7 @@
           ¡Eleva Tus Sueños, Enciende Tu Pasión, Despierta Tu Potencial!
         </p>
         <button
-          class="mx-auto lg:mx-10 hover:underline bg-white text-gray-800 font-bold rounded-md my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out responsive--button sm:mt-40 md:mt-20 lg:mt-1 xl:mt-24">
-          Comenzar
+          class="mx-auto lg:mx-10 hover:underline bg-white text-gray-800 font-bold rounded-md my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline hover:bg-red-700 transform transition hover:scale-105 duration-300 ease-in-out responsive--button sm:mt-40 md:mt-20 lg:mt-1 xl:mt-24">Comenzar
         </button>
 
       </div>
@@ -115,7 +114,7 @@
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
 
-  <div class="pt-0">
+  <div class="pt-0" id="trigger"> <!-- Aca incluimos el efecto del nav -->
     <div class="relative -mt-12 lg:-mt-48">
       <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -142,32 +141,46 @@
   </div>
 
   <section class="bg-white border-b py-8">
-    <div class="container max-w-5xl mx-auto m-8">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+    <div class="container max-w-7xl mx-auto m-8 mar--corto">
+      <h2
+        class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 celular-small:text-xs responsive--title">
         ¿Quienes somos?
       </h2>
-      <div class="w-full mb-4">
+      <div class="w-full mb-4 mar--corto">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
-      <div class="flex flex-row justify-center">
-        <div class="flex w-5/6 sm:w-1/2 p-6 items-center">
-          <p class="text-gray-600 text-2xl mb-8">
-            Despega Bolivia Hub, es una institución que impulsa emprendimientos innovadores con alto impacto en
-            la sociedad, a través del desarrollo personal y la formación en emprendimiento como solución al
-            desempleo con enfoque de igualdad de género para aportar al desarrollo del país.
+      <div class="flex flex-row justify-center no--flex">
+        <div class="flex sm:w-1/2 p-6 items-center w-full">
+          <p class="text-gray-600 text-2xl mb-1 responsive--p mar--corto sm:text-lg">
+            Despega Bolivia Hub, es una institución que impulsa emprendimientos innovadores con alto impacto en la
+            sociedad, a través del desarrollo personal y la formación en emprendimiento como solución al desempleo con
+            enfoque de igualdad de género para aportar al desarrollo del país.
+            <br><br>
+            Fomentamos e impulsamos una comunidad de Emprendedores, apasionados, que comparten el sueño de impactar de
+            manera positiva en la sociedad, y actuar de manera conjunta para desarrollar sus emprendimientos; Es una
+            fuente de inspiración que ofrece contenido significativo a través de: eventos que invitan a la reflexión,
+            laboratorios de innovación, espacios de aprendizaje, y conversaciones guiadas.
           </p>
         </div>
-        <div class="sm:w-1/2">
-          <img src="./src/img/quienes-somos.jpeg" alt="">
+
+        <div class="sm:w-1/2 px-4 padd--corto sm:my-auto">
+          <img class="rounded-xl" src="./src/img/quienes-somos.jpeg" alt="Comienzo Despega">
         </div>
+
+      </div>
+      <div class="block  p-6  w-full">
+        <p class="text-gray-600 text-2xl mb-8 responsive--p mar--corto sm:text-lg">
+          Desarrollamos emprendimientos que permitan trabajar en ideas con innovación y se genere sostenibilidad
+          económica a través de nuestros programas.
+        </p>
       </div>
     </div>
   </section>
 
-  <section class="bg-white border-b py-8">
+  <section class="bg-white border-b py-4">
     <div class="container max-w-5xl mx-auto m-8">
-    
-      <div class="content1 flex flex-wrap flex-col-reverse sm:flex-row w-full">
+
+<!--       <div class="content1 flex flex-wrap flex-col-reverse sm:flex-row w-full">
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <img src="./src/img/hub-cohete.jpg" alt="" class="">
         </div>
@@ -182,43 +195,65 @@
             </p>
           </div>
         </div>
+      </div> -->
+
+
+
+      <div class="e-card playing ecard--adaptativo">
+        <div class="image"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+
+        <div class="infotop flex flex-row justify-center items-center h-full flex--adaptativo">
+          <div class="w-full basis-2/4">
+            <img src="./src/img/astronautadespega.png" alt="" class="w-48 mx-auto astro--responsive">
+          </div>
+          <div class="pt-5 basis-2/4 px-20 text-2xl text-[#f97316] font-bold leading-none mb-3 p-2 p--card">
+            ¿Tienes una Startup o eres parte del ecosistema Emprendedor Boliviano?
+            <br>
+            <div class="name text-base">
+              Descubre esta gran opotunidad y viaja a Silicon Valley para reunirte con mas de 15.000 emprendedores, inversionistas y representantes del ecosistema emprendedor de todo el mundo
+            </div> 
+          </div>
+        </div>
       </div>
 
     </div>
   </section>
 
-    <div class="cuerpo_mision">
-      <div class="titulo_nuestro_enfoque">
-        <h1>Nuestro enfoque</h1>
-      </div>
-      <div class="contenedor_principal">
-        <div class="contenedor_secundario">
-          <div class="titulo">
-            <h2>Mision</h2>
-          </div>
-          <div class="contenido">
-            <p>
-              Educar, conectar, impulsar y generar emprendimientos innovadores
-              liderados por mujeres y jóvenes con alto impacto en la sociedad,
-              como solución al desempleo con enfoque de igualdad de género para
-              aportar al desarrollo del país
-            </p>
-          </div>
+  <div class="cuerpo_mision">
+    <div class="titulo_nuestro_enfoque">
+      <h1>Nuestro enfoque</h1>
+    </div>
+    <div class="contenedor_principal">
+      <div class="contenedor_secundario">
+        <div class="titulo">
+          <h2>Mision</h2>
         </div>
-        <div class="contenedor_secundario">
-          <div class="titulo">
-            <h2>Propuesta de Valor</h2>
-          </div>
-          <div class="contenido">
-            <p>
-              Desarrollamos emprendimientos que permitan trabajar en ideas con
-              innovación y se genere sostenibilidad económica a través de
-              nuestros programas.
-            </p>
-          </div>
+        <div class="contenido">
+          <p>
+            Educar, conectar, impulsar y generar emprendimientos innovadores
+            liderados por mujeres y jóvenes con alto impacto en la sociedad,
+            como solución al desempleo con enfoque de igualdad de género para
+            aportar al desarrollo del país
+          </p>
+        </div>
+      </div>
+      <div class="contenedor_secundario">
+        <div class="titulo">
+          <h2>Propuesta de Valor</h2>
+        </div>
+        <div class="contenido">
+          <p>
+            Desarrollamos emprendimientos que permitan trabajar en ideas con
+            innovación y se genere sostenibilidad económica a través de
+            nuestros programas.
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
   <!-- ALCANCE -->
 
@@ -276,126 +311,175 @@
 
   </div>
 
-    <div class="cuerpo_proyectos">
-      <div class="titulo">
-        <h1>Proyectos</h1>
-      </div>
-      <div class="lista_proyectos">
-        <div class="proyecto">
-          <img
-            src="./src/img/proyectos/ruje.png"
-            alt="Red Universitaria de Jóvenes Emprendedores"
-          />
-          <div class="titulo_proyecto">
-            <h1>Red Universitaria de Jóvenes Emprendedores</h1>
-          </div>
-        </div>
-        
-        <div class="proyecto">
-          <img
-            src="./src/img/proyectos/WEB.png"
-            alt="Women Entrepreneurs for Bolivia"
-          />
-          <div class="titulo_proyecto">
-            <h1>Women Entrepreneurs for Bolivia</h1>
-          </div>
-        </div>
-        
-        <div class="proyecto">
-          <img
-            src="./src/img/proyectos/girls in startups.png"
-            alt="Girls in Startups"
-          />
-          <div class="titulo_proyecto">
-            <h1>Girls in Startups</h1>
-          </div>
-        </div>
-        
-        <div class="proyecto">
-          <img
-            src="./src/img/proyectos/red internacional de jovenes emprendedores.png"
-            alt="Red Internacional de Jóvenes Emprendedores"
-          />
-          <div class="titulo_proyecto">
-            <h1>Red Internacional de Jóvenes Emprendedores</h1>
-          </div>
-        </div>
-        
-      </div>
+  <div class="cuerpo_proyectos">
+    <div class="titulo">
+      <h1>Proyectos</h1>
     </div>
-
-    <div class="cuerpo_programas">
-      <div class="titulo">
-        <h1>Programas</h1>
+    <div class="lista_proyectos">
+      <div class="proyecto">
+        <img src="./src/img/proyectos/ruje.png" alt="Red Universitaria de Jóvenes Emprendedores" />
+        <div class="titulo_proyecto">
+          <h1>Red Universitaria de Jóvenes Emprendedores</h1>
+        </div>
       </div>
-      <div class="principal_contenedor">
-        <div class="contenedor">
-          <div class="logo_programa">
-            <img
-              src="./src/img/Programas/Despega tu Emprendimiento.png"
-              alt="Despega tu Emprendimiento"
-            />
-          </div>
-          <div class="contenido">
-            <div class="titulo_contenido">Despega tu Emprendimiento</div>
-            <div class="desc_contenido">
-              Es un programa educativo cuya finalidad es impulsar el desarrollo
-              de emprendimientos innovadores de alto impacto que respondan a las
-              necesidades del mercado enfocándose a los Objetivos de Desarrollo
-              Sostenible.
-            </div>
+
+      <div class="proyecto">
+        <img src="./src/img/proyectos/WEB.png" alt="Women Entrepreneurs for Bolivia" />
+        <div class="titulo_proyecto">
+          <h1>Women Entrepreneurs for Bolivia</h1>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <img src="./src/img/proyectos/girls in startups.png" alt="Girls in Startups" />
+        <div class="titulo_proyecto">
+          <h1>Girls in Startups</h1>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <img src="./src/img/proyectos/red internacional de jovenes emprendedores.png"
+          alt="Red Internacional de Jóvenes Emprendedores" />
+        <div class="titulo_proyecto">
+          <h1>Red Internacional de Jóvenes Emprendedores</h1>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cuerpo_programas">
+    <div class="titulo">
+      <h1>Programas</h1>
+    </div>
+    <div class="principal_contenedor">
+      <div class="contenedor">
+        <div class="logo_programa">
+          <img src="./src/img/Programas/Despega tu Emprendimiento.png" alt="Despega tu Emprendimiento" />
+        </div>
+        <div class="contenido">
+          <div class="titulo_contenido">Despega tu Emprendimiento</div>
+          <div class="desc_contenido">
+            Es un programa educativo cuya finalidad es impulsar el desarrollo
+            de emprendimientos innovadores de alto impacto que respondan a las
+            necesidades del mercado enfocándose a los Objetivos de Desarrollo
+            Sostenible.
           </div>
         </div>
-        <div class="contenedor">
-          <div class="logo_programa">
-            <img
-              src="./src/img/Programas/Women in Business Bolivia.png"
-              alt="Women in Business Bolivia"
-            />
-          </div>
-          <div class="contenido">
-            <div class="titulo_contenido">Women in Business Bolivia</div>
-            <div class="desc_contenido">
-              WIB es un programa cuyo propósito es brindar oportunidades de
-              crecimiento a jóvenes mujeres a través de experiencias en
-              emprendimiento y conocer universidades prestigiosas a nivel
-              internacional.
-            </div>
+      </div>
+      <div class="contenedor">
+        <div class="logo_programa">
+          <img src="./src/img/Programas/Women in Business Bolivia.png" alt="Women in Business Bolivia" />
+        </div>
+        <div class="contenido">
+          <div class="titulo_contenido">Women in Business Bolivia</div>
+          <div class="desc_contenido">
+            WIB es un programa cuyo propósito es brindar oportunidades de
+            crecimiento a jóvenes mujeres a través de experiencias en
+            emprendimiento y conocer universidades prestigiosas a nivel
+            internacional.
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer class="bg-">
-      <div class="container mx-auto px-8">
-        <div class="w-full flex flex-col md:flex-row py-6">
-          <div class="flex-1 mb-6 text-black">
-            <a class=" href="#">
-              DESPEGA BOLIVIA HUB
-            </a>
+  <!-- <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+      <h1
+        class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+      >
+        Nuestro enfoque
+      </h1>
+      <div class="w-full mb-4">
+        <div
+          class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+        ></div>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
+        <div
+          class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
+        >
+          <div
+            class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
+          >
+            <div class="p-8 text-3xl font-bold text-center border-b-4">
+              Mision
+            </div>
+            <h1>
+              Educar, conectar, impulsar y generar emprendimientos innovadores
+              liderados por mujeres y jóvenes con alto impacto en la sociedad,
+              como solución al desempleo con enfoque de igualdad de género para
+              aportar al desarrollo del país
+            </h1>
           </div>
-          <div class="flex-1">
-            <p class="text-2xl p-2">MENÚ</p>
-            <ul class="">
-              <li class="">
-                <a href="#" class="">INICIO</a>
-              </li>
-              <li class="">
-                <a href="#" class="">SOBRE NOSOTROS</a>
-              </li>
-              <li class="">
-                <a href="#" class="">SERVICIOS</a>
-              </li>
-              <li class="">
-                <a href="#" class="">LOGROS</a>
-              </li>
-              <li class="">
-                <a href="#" class="">POYECTOS Y PROGRAMAS</a>
-              </li>
-            </ul>
+          <div
+            class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+          >
+            <div class="flex items-center justify-center"></div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
+        >
+          <div
+            class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
+          >
+            <div class="p-8 text-3xl font-bold text-center border-b-4">
+              Propuesta de Valor
+            </div>
+            <h1>
+              Desarrollamos emprendimientos que permitan trabajar en ideas con
+              innovación y se genere sostenibilidad económica a través de
+              nuestros programas.
+            </h1>
+          </div>
+          <div
+            class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+          >
+            <div
+              class="w-full pt-6 text-3xl text-gray-600 font-bold text-center"
+            ></div>
+            <div class="flex items-center justify-center"></div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div> -->
+
+  <footer class="bg-">
+    <div class="container mx-auto px-8">
+      <div class="w-full flex flex-col md:flex-row py-6">
+        <div class="flex-1 mb-6 text-black">
+          <a class=" href=" #">
+            DESPEGA BOLIVIA HUB
+          </a>
+        </div>
+        <div class="flex-1">
+          <p class="text-2xl p-2">MENÚ</p>
+          <ul class="">
+            <li class="">
+              <a href="#" class="">INICIO</a>
+            </li>
+            <li class="">
+              <a href="#" class="">SOBRE NOSOTROS</a>
+            </li>
+            <li class="">
+              <a href="#" class="">SERVICIOS</a>
+            </li>
+            <li class="">
+              <a href="#" class="">LOGROS</a>
+            </li>
+            <li class="">
+              <a href="#" class="">POYECTOS Y PROGRAMAS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Importacion de Scripts -->
+  <script src="./src/js/navScroll.js"></script>
+</body>
+
 </html>
