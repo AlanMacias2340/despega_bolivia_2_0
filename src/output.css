@@ -850,13 +850,10 @@ video {
   border-radius: 0px;
 }
 
-<<<<<<< HEAD
-=======
 .rounded-xl {
   border-radius: 0.75rem;
 }
 
->>>>>>> fda06ed44b3091433c2c275caa8cfba7791d83d4
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -998,13 +995,10 @@ video {
   padding-top: 1rem;
 }
 
-<<<<<<< HEAD
-=======
 .pt-5 {
   padding-top: 1.25rem;
 }
 
->>>>>>> fda06ed44b3091433c2c275caa8cfba7791d83d4
 .pt-6 {
   padding-top: 1.5rem;
 }
