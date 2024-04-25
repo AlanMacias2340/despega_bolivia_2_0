@@ -5,14 +5,9 @@
     background-repeat: no-repeat;
     position: relative;
 }
-.espacio .fondo_negro{
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+
 .cuerpo_mision{
-    display: felx;
+    display: flex;
     flex-direction: row;
     position: relative;
 }
@@ -68,6 +63,32 @@
     text-align: justify;
 }
 
+/*logros*/
+.contenedor_logros{
+    color: white;
+    text-align: justify;
+}
+.contenedor_logros .titulo{
+    border-bottom: solid white 2px;
+    font-size: 2em;
+}
+.contenedor_logros .contenedor_secundario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.contenedor_logros .contenedor_secundario .cohete_img{
+    transform: rotate(45deg);
+    margin-right: 50px;
+}
+.contenedor_logros .contenedor_secundario .cohete_img img{
+    max-width: 125px;
+}
+.contenedor_logros .contenedor_secundario .descripcion_logros ul{
+    list-style: circle;
+    margin-left: 50px;
+}
 
 
 /*diseño para el cuerpo de proyectos despega bolivia*/
