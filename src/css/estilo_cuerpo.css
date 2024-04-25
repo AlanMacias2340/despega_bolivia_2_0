@@ -5,29 +5,19 @@
     background-repeat: no-repeat;
     position: relative;
 }
-.espacio .fondo_negro{
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+
 .cuerpo_mision{
-    display: felx;
-    flex-direction: row;
     position: relative;
 }
 .cuerpo_mision .titulo_nuestro_enfoque{
     color: white;
     font-size: 2em;
-    position: absolute;
     border-bottom: 2px white solid;
-    width: 100%;
 }
 .cuerpo_mision .contenedor_principal{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 50px 40px 0px 40px;
+    justify-content: space-around;
 }
 .cuerpo_mision .contenedor_principal .contenedor_img_astronauta {
     max-width: 600px;
@@ -68,6 +58,32 @@
     text-align: justify;
 }
 
+/*logros*/
+.contenedor_logros{
+    color: white;
+    text-align: justify;
+}
+.contenedor_logros .titulo{
+    border-bottom: solid white 2px;
+    font-size: 2em;
+}
+.contenedor_logros .contenedor_secundario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.contenedor_logros .contenedor_secundario .cohete_img{
+    transform: rotate(45deg);
+    margin-right: 50px;
+}
+.contenedor_logros .contenedor_secundario .cohete_img img{
+    max-width: 125px;
+}
+.contenedor_logros .contenedor_secundario .descripcion_logros ul{
+    list-style: circle;
+    margin-left: 50px;
+}
 
 
 /*diseño para el cuerpo de proyectos despega bolivia*/
@@ -75,22 +91,18 @@
 .cuerpo_proyectos{
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 .cuerpo_proyectos .titulo{
     font-size: 2em;
     color: white;
-    position: absolute;
     border-bottom: 2px white solid;
-    width: 100%;
 }
 
 .cuerpo_proyectos .lista_proyectos{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    top: 50px;
-    padding: 100px 40px 40px 40px;
+    padding: 50px;
 }
 .cuerpo_proyectos .lista_proyectos .proyecto{
     background-color: white;
@@ -131,15 +143,12 @@
 .cuerpo_programas{
     display: flex;
     flex-direction: column;
-    position: relative;
     
 }
 .cuerpo_programas .titulo{
     font-size: 2em;
     color: white;
-    position: absolute;
     border-bottom: 2px white solid;
-    width: 100%;
 }
 .cuerpo_programas .principal_contenedor{
     padding: 25px 100px;
