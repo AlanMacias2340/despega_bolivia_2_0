@@ -11,6 +11,7 @@
 }
 .cuerpo_mision .titulo_nuestro_enfoque{
     color: #F97316;
+    font-weight: bold;
     font-size: 2em;
     border-bottom: 2px white solid;
 }
@@ -66,12 +67,10 @@
     color: #F97316;
     text-align: justify;
 }
-.contenedor_logros .contenedor_secundario .descripcion_logros{
-    color: white;
-}
 .contenedor_logros .titulo{
     border-bottom: solid white 2px;
     font-size: 2em;
+    font-weight: bold;
 }
 .contenedor_logros .contenedor_secundario{
     display: flex;
@@ -89,6 +88,8 @@
 .contenedor_logros .contenedor_secundario .descripcion_logros ul{
     list-style: circle;
     margin-left: 50px;
+    color: white;
+    font-size: 20px;
 }
 
 
@@ -102,6 +103,7 @@
     font-size: 2em;
     color: #F97316;
     border-bottom: 2px white solid;
+    font-weight: bold;
 }
 
 .cuerpo_proyectos .lista_proyectos{
@@ -154,6 +156,7 @@
 .cuerpo_programas .titulo{
     font-size: 2em;
     color: #F97316;
+    font-weight: bold;
     border-bottom: 2px white solid;
 }
 .cuerpo_programas .principal_contenedor{
@@ -196,4 +199,24 @@
 .cuerpo_programas .contenedor_img img{
     max-width: 300px;
 
+    animation-name: up_down;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes up_down{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-30px) scaleY(1);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-15px) scaleY(1);
+    }
 }
