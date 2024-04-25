@@ -39,11 +39,11 @@
    }
    .ecard--adaptativo{
       width: 90%;
-      height: 500px;
+      height: 550px;
       margin: 0px 15px;
    }
    .p--card{
-      padding: 10px;
+      padding: 50px 20px;
    }
    .wave {
       position: absolute;
@@ -62,6 +62,21 @@
   }
   .astro--responsive{
    padding-top: 30px;
+  }
+  .card--adaptativo{
+   width: 50%;
+   margin-bottom: 30px;
+  }
+  .card--adaptativo__img{
+   width: 60px;
+  }
+  .card--adaptativo__img img{
+   width: 30px;
+   margin: 0px 15px;
+  }
+  .card--adaptativo__text{
+   font-size: 1rem;
+   padding: 0;
   }
 
 /* -> Media-queries para celulares estandar*/
