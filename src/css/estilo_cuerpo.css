@@ -1,10 +1,7 @@
 .espacio{
-    background-image: url(../img/Fondos/fondo_estrellado.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
-}
+    background-color: black;
+  }
 
 .cuerpo_mision{
     position: relative;
@@ -93,7 +90,7 @@
 }
 
 
-/*diseño para el cuerpo de proyectos despega bolivia*/
+/*cuerpo de proyectos despega bolivia*/
 
 .cuerpo_proyectos{
     display: flex;
@@ -137,6 +134,7 @@
 }
 .cuerpo_proyectos .lista_proyectos .proyecto:hover .titulo_proyecto{
     top:0;
+    cursor: pointer;
 }
 .cuerpo_proyectos .lista_proyectos .proyecto img{
     position: absolute;
@@ -160,10 +158,7 @@
     border-bottom: 2px white solid;
 }
 .cuerpo_programas .principal_contenedor{
-    padding: 25px 100px;
-    padding-top: 80px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
