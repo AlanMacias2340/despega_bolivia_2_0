@@ -1,10 +1,10 @@
 /* -> Media-queries para celulares pequeños*/
 @media only screen and (min-width: 320px) and (max-width: 400px) {
    .responsive--title {
-      font-size: 20px; /* Reducir el tamaño del título para pantallas en este rango */
+      font-size: 22px; /* Reducir el tamaño del título para pantallas en este rango */
    }
    .responsive--p {
-      font-size: 13px;
+      font-size: 15px;
    }
    .responsive--astro {
       position: absolute;
@@ -77,6 +77,14 @@
   .card--adaptativo__text{
    font-size: 1rem;
    padding: 0;
+  }
+
+  .astro--responsive2{
+   width: 150px;
+   margin-top: 30px;
+  }
+  .block--margin{
+   margin: 20px 0px;
   }
 
 /* -> Media-queries para celulares estandar*/

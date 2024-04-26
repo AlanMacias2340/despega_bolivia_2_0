@@ -156,7 +156,7 @@ body {
 
 /* Estilo de tarjeta con fondo de oleaje */
 .e-card {
-    margin: 100px auto;
+    margin: 10px auto;
     background: transparent;
     box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
     position: relative;

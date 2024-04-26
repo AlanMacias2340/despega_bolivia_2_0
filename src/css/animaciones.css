@@ -10,10 +10,10 @@
 @keyframes floatUpDown {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translateY(20px);
   }
   50% {
-    transform: translateY(-40px); /* Distancia hacia arriba */
+    transform: translateY(-20px); /* Distancia hacia arriba */
   }
 }
 
@@ -143,3 +143,4 @@
   font-weight: 800;
   font-size: 1.5em;
 }
+

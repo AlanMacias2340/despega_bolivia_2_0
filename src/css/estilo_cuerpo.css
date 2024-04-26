@@ -8,6 +8,7 @@
 
 .cuerpo_mision{
     position: relative;
+    margin: 0px 40px;
 }
 .cuerpo_mision .titulo_nuestro_enfoque{
     color: #F97316;
@@ -21,12 +22,10 @@
     justify-content: space-around;
 }
 .cuerpo_mision .contenedor_principal .contenedor_img_astronauta {
-    max-width: 600px;
-    height: 300px;
+    width: 100%;
 }
 .cuerpo_mision .contenedor_principal .contenedor_img_astronauta img{
-    max-width: 600px;
-    height: 300px;
+    width: 50%;
     animation-name: up_down;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -35,8 +34,7 @@
 }
 .cuerpo_mision .contenedor_principal .contenedor_secundario{
     background-color: #04032bb3;
-    width: 400px;
-    height: 320px;
+    width: 100%;
     color: #F97316;
     border-radius: 50px;
     display: flex;
@@ -48,7 +46,7 @@
     color: white;
 }
 .cuerpo_mision .contenedor_secundario .titulo{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
     border-bottom: solid white 2px;
     display: flex;
@@ -57,11 +55,9 @@
     padding: 15px 0px;
 }
 .cuerpo_mision .contenedor_secundario .contenido{
-    width: 400px;
-    height: 180px;
-    padding: 50px;
+    width: 100%;
     display: flex;
-    align-items: center;
+    padding: 20px 30px;
     justify-content: center;
     text-align: justify;
 }
