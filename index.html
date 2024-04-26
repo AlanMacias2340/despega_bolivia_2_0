@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./src/css/animaciones.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
 
+    <!--Se integra la animacion de estrellas fugases-->
+    <link rel="stylesheet" href="src/animacion_estrellas_fugases/style.css" />
     <!--Replace with your tailwind.css once created-->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
@@ -413,8 +415,7 @@
       </div>
     </div>
 
-    <div class="espacio">
-      <div class="fondo_negro"></div>
+    <div class="espacio" id="star-container">
       <!--MISION Y PROPUEATA DE VALOR-->
       <div class="cuerpo_mision">
         <div class="titulo_nuestro_enfoque">
@@ -452,7 +453,7 @@
           </div>
         </div>
       </div>
-
+      
       <!--Logros-->
       <div class="contenedor_logros">
         <div class="titulo">
@@ -488,11 +489,12 @@
           </div>
         </div>
       </div>
+
+      <!--Proyectos-->
       <div class="cuerpo_proyectos">
         <div class="titulo">
           <h1>Proyectos</h1>
         </div>
-
         <div class="lista_proyectos">
           <div class="proyecto">
             <img
@@ -552,12 +554,14 @@
         <div class="principal_contenedor">
           <div>
             <div class="contenedor">
-              <div class="logo_programa">
-                <img
-                  src="./src/img/Programas/Despega tu Emprendimiento.png"
-                  alt="Despega tu Emprendimiento"
-                />
-              </div>
+              <a href="">
+                <div class="logo_programa">
+                  <img
+                    src="./src/img/Programas/Despega tu Emprendimiento.png"
+                    alt="Despega tu Emprendimiento"
+                  />
+                </div>
+              </a>
               <div class="contenido">
                 <div class="titulo_contenido">Despega tu Emprendimiento</div>
                 <div class="desc_contenido">
@@ -569,12 +573,14 @@
               </div>
             </div>
             <div class="contenedor">
-              <div class="logo_programa">
-                <img
-                  src="./src/img/Programas/Women in Business Bolivia.png"
-                  alt="Women in Business Bolivia"
-                />
-              </div>
+              <a href="https://wib-info.my.canva.site/">
+                <div class="logo_programa">
+                  <img
+                    src="./src/img/Programas/Women in Business Bolivia.png"
+                    alt="Women in Business Bolivia"
+                  />
+                </div>
+              </a>
               <div class="contenido">
                 <div class="titulo_contenido">Women in Business Bolivia</div>
                 <div class="desc_contenido">
@@ -648,5 +654,6 @@
 
     <!-- Importacion de Scripts -->
     <script src="./src/js/navScroll.js"></script>
+    <script src="./src/animacion_estrellas_fugases/app.js"></script>
   </body>
 </html>
