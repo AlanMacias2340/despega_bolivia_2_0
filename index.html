@@ -4,26 +4,31 @@
 <![endif]-->
 <!--[if gt IE 9]><!-->
 <html lang="es">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Despega Bolivia HUB</title>
-  <!-- Integramos TailwindCSS a nuestro archivo -->
-  <link href="./src/output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./src/css/estilo_cuerpo.css" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Despega Bolivia HUB</title>
+    <!-- Integramos TailwindCSS a nuestro archivo -->
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/estilo_cuerpo.css" />
 
-  <!-- Integramos archivos css adicionales -->
-  <link rel="stylesheet" media="all" href="./src/css/style.css" />
-  <link rel="stylesheet" href="./src/css/animaciones.css" />
-  <link rel="stylesheet" href="./src/css/responsive.css" />
+    <!-- Integramos archivos css adicionales -->
+    <link rel="stylesheet" media="all" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/animaciones.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
 
-  <!--Replace with your tailwind.css once created-->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
-  <!-- Incluimos el CDN de Tailwind -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-</head>
+    <!--Se integra la animacion de estrellas fugases-->
+    <link rel="stylesheet" href="./src/animacion_estrellas_fugases/style.css" />
+    <!--Replace with your tailwind.css once created-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+    <!-- Incluimos el CDN de Tailwind -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
 
 <body>
   <div class="context2">
@@ -307,13 +312,11 @@
     </div>
   </div>
 
-
-  <div class="espacio">
-    <div class="fondo_negro"></div>
+  <div class="espacio" id="star-container">
     <!--MISION Y PROPUEATA DE VALOR-->
     <div class="cuerpo_mision">
       <div class="titulo_nuestro_enfoque">
-        <h1 class="text-[40px] font-bold px-2 py-4 text-[#f97316] responsive--title">NUESTRO ENFOQUE</h1>
+        <h1>Nuestro enfoque</h1>
       </div>
       <div class="contenedor_principal">
         <div class="contenedor_img_astronauta">
@@ -347,44 +350,100 @@
         </div>
       </div>
     </div>
-
-    <div class="cuerpo_proyectos">
+    
+    <!--Logros-->
+    <div class="contenedor_logros">
       <div class="titulo">
-        <h1>Proyectos</h1>
+        <h1>Logros</h1>
       </div>
-
-      <div class="lista_proyectos">
-        <div class="proyecto">
-          <img src="./src/img/proyectos/ruje.png" alt="Red Universitaria de Jóvenes Emprendedores" />
-          <div class="titulo_proyecto">
-            <h1>Red Universitaria de Jóvenes Emprendedores</h1>
-          </div>
+      <div class="contenedor_secundario">
+        <div class="cohete_img">
+          <img src="./src/img/Cohete.png" alt="" />
         </div>
-
-        <div class="proyecto">
-          <img src="./src/img/proyectos/WEB.png" alt="Women Entrepreneurs for Bolivia" />
-          <div class="titulo_proyecto">
-            <h1>Women Entrepreneurs for Bolivia</h1>
-          </div>
-        </div>
-
-        <div class="proyecto">
-          <img src="./src/img/proyectos/girls in startups.png" alt="Girls in Startups" />
-          <div class="titulo_proyecto">
-            <h1>Girls in Startups</h1>
-          </div>
-        </div>
-
-        <div class="proyecto">
-          <img src="./src/img/proyectos/red internacional de jovenes emprendedores.png"
-            alt="Red Internacional de Jóvenes Emprendedores" />
-          <div class="titulo_proyecto">
-            <h1>Red Internacional de Jóvenes Emprendedores</h1>
-          </div>
+        <div class="descripcion_logros">
+          <ul>
+            <li>
+              <p>
+                Nominados dentro de los 150 mejores emprendedores a nivel
+                global, por la Universidad de Standford en el Global
+                Entrepreneurship Summit.
+              </p>
+            </li>
+            <li>
+              <p>
+                Ganadores del Premio KORY WUAYNA jóvenes emprendedores
+                otorgado por Cámara de Diputados.
+              </p>
+            </li>
+            <li>
+              <p>
+                Reconocimientos por CUSO INTERNACIONAL, GOBIERNO AUTONOMO
+                MUNICIPAL DE LA PAZ, CÁMARA NACIONAL DE COMERCIO, entre otras
+                instituciones.
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
+    <!--Proyectos-->
+    <div class="cuerpo_proyectos">
+      <div class="titulo">
+        <h1>Proyectos</h1>
+      </div>
+      <div class="lista_proyectos">
+        <div class="proyecto">
+          <img
+            src="./src/img/proyectos/ruje.png"
+            alt="Red Universitaria de Jóvenes Emprendedores"
+          />
+          <a href="#">
+            <div class="titulo_proyecto">
+              <h1>Red Universitaria de Jóvenes Emprendedores</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="proyecto">
+          <img
+            src="./src/img/proyectos/WEB.png"
+            alt="Women Entrepreneurs for Bolivia"
+          />
+          <a href="#">
+            <div class="titulo_proyecto">
+              <h1>Women Entrepreneurs for Bolivia</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="proyecto">
+          <img
+            src="./src/img/proyectos/girls in startups.png"
+            alt="Girls in Startups"
+          />
+          <a href="#">
+            <div class="titulo_proyecto">
+              <h1>Girls in Startups</h1>
+            </div>
+          </a>
+        </div>
+
+        <div class="proyecto">
+          <img
+            src="./src/img/proyectos/red internacional de jovenes emprendedores.png"
+            alt="Red Internacional de Jóvenes Emprendedores"
+          />
+          <a href="#">
+            <div class="titulo_proyecto">
+              <h1>Red Internacional de Jóvenes Emprendedores</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Programas-->
     <div class="cuerpo_programas">
       <div class="titulo">
         <h1>Programas</h1>
@@ -392,9 +451,14 @@
       <div class="principal_contenedor">
         <div>
           <div class="contenedor">
-            <div class="logo_programa">
-              <img src="./src/img/Programas/Despega tu Emprendimiento.png" alt="Despega tu Emprendimiento" />
-            </div>
+            <a href="">
+              <div class="logo_programa">
+                <img
+                  src="./src/img/Programas/Despega tu Emprendimiento.png"
+                  alt="Despega tu Emprendimiento"
+                />
+              </div>
+            </a>
             <div class="contenido">
               <div class="titulo_contenido">Despega tu Emprendimiento</div>
               <div class="desc_contenido">
@@ -406,9 +470,14 @@
             </div>
           </div>
           <div class="contenedor">
-            <div class="logo_programa">
-              <img src="./src/img/Programas/Women in Business Bolivia.png" alt="Women in Business Bolivia" />
-            </div>
+            <a href="https://wib-info.my.canva.site/">
+              <div class="logo_programa">
+                <img
+                  src="./src/img/Programas/Women in Business Bolivia.png"
+                  alt="Women in Business Bolivia"
+                />
+              </div>
+            </a>
             <div class="contenido">
               <div class="titulo_contenido">Women in Business Bolivia</div>
               <div class="desc_contenido">
@@ -479,7 +548,6 @@
 
   <!-- Importacion de Scripts -->
   <script src="./src/js/navScroll.js"></script>
-
-</body>
-
+  <script src="./src/animacion_estrellas_fugases/app.js"></script>
+  </body>
 </html>
