@@ -95,3 +95,51 @@
   border: none;
   background: transparent;
 }
+
+/* Animacion de Zoom */
+.efecto--zoom {
+  position: relative;
+  width: 270px;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.efecto--zoom:hover {
+  transform: translateY(-20px);
+}
+
+.efecto--zoom::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ffbc00, #a10139);
+  border-radius: 1.2em;
+}
+
+.efecto--zoom::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+  filter: blur(30px);
+}
+
+.efecto--zoom .content--zoom {
+  position: relative;
+  padding: 10px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5em;
+}
