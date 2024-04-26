@@ -5,7 +5,7 @@ function createStar() {
   star.classList.add("star");
   starContainer.appendChild(star);
 
-  const xPos = Math.random() * (window.innerWidth-1);
+  const xPos = Math.random() * (window.innerWidth-100);
   const yPos = Math.random() * window.innerHeight;
   const duration = Math.random() * 10 + 5; // Duración aleatoria de la animación
 
@@ -15,6 +15,6 @@ function createStar() {
 }
 
 // Generar múltiples estrellas fugaces
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 80; i++) {
   createStar();
 }
